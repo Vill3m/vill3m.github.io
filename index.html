@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ФотоЦентер</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<style type="text/css">
+		@charset "UTF-8";.btn,img{vertical-align:middle}.dropdown-toggle:after,.navbar-toggleable-xs:after,.navbar:after{content:""}.btn,a{text-decoration:none}ol,ul{margin-bottom:1rem}html{box-sizing:border-box;font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}button{overflow:visible;font:inherit;text-transform:none}.btn,.nav-link{text-transform:uppercase}header,nav,section{display:block}a{background-color:transparent;color:#009688}h2,h3,ol,ul{margin-top:0}img{border-style:none}button,html [type=button]{-webkit-appearance:button}button::-moz-focus-inner{border:0;padding:0}button:-moz-focusring{outline:ButtonText dotted 1px}html{font-size:16px;-ms-overflow-style:scrollbar}*,:after,:before{box-sizing:inherit}@-ms-viewport{width:device-width}body{margin:0;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:1rem;line-height:1.5;color:rgba(0,0,0,.87);background-color:#fafafa}[role=button],a,button{-ms-touch-action:manipulation;touch-action:manipulation}button{margin:0;line-height:inherit;border-radius:0}h2,h3{margin-bottom:.25rem;font-family:inherit;font-weight:400;line-height:1.1;color:inherit}h2{font-size:2rem}h3{font-size:1.75rem}.container{margin-left:auto;margin-right:auto;padding-right:15px;padding-left:15px}.btn{display:inline-block;font-weight:500;line-height:1.25;text-align:center;white-space:nowrap;padding:.46875rem 1rem;border-radius:.125rem}.dropdown-item,body{font-weight:400}.btn-warning{color:#fff;background-color:#ff5722;border-color:#ff5722;box-shadow:none}.btn.btn-raised,.dropdown-menu,.navbar{box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12)}.btn-lg{padding:.75rem 1.5rem;font-size:1.25rem;border-radius:.3rem}.collapse{display:none}.dropdown{position:relative}.dropdown-toggle:after{display:inline-block;width:0;height:0;margin-left:.3em;vertical-align:middle;border-top:.3em solid;border-right:.3em solid transparent;border-left:.3em solid transparent}.dropdown-menu{float:left;position:absolute;top:100%;z-index:1000;min-width:160px;margin:2px 0 0;font-size:1rem;color:rgba(0,0,0,.87);text-align:left;list-style:none;background-color:#fff;background-clip:padding-box;border-radius:.125rem}.carousel,.carousel-inner,.navbar{position:relative}.dropdown-item{display:block;width:100%;padding:3px 20px;clear:both;color:rgba(0,0,0,.87);text-align:inherit;white-space:nowrap;background:0 0;border:0}.nav-link{display:inline-block}.navbar:after{clear:both;display:table}.nav{padding-left:0;margin-bottom:0;list-style:none}.navbar{padding:.25rem .5rem}.navbar-brand{float:left;padding-top:.25rem;padding-bottom:.25rem;margin-right:1rem;font-size:1.25rem}.navbar-toggler{padding:.5rem .75rem;font-size:1.25rem;line-height:1;background:0 0;border:1px solid transparent;border-radius:.125rem}.navbar-nav .nav-item{float:left}.navbar-nav .nav-link{display:block;padding-top:.425rem;padding-bottom:.425rem}.navbar-nav .nav-item+.nav-item{margin-left:1rem}.navbar-dark .navbar-brand{color:#fff}.navbar-dark .navbar-nav .nav-link{color:hsla(0,0%,100%,.5)}.navbar-toggleable-xs:after{clear:both;display:table}@media (max-width:543px){.navbar-toggleable-xs .navbar-nav .nav-item{float:none;margin-left:0}}.carousel-inner{overflow:hidden;width:100%}.carousel-inner>.carousel-item{position:relative;display:none}@media (-webkit-transform-3d),all and (transform-3d){.carousel-inner>.carousel-item{-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-perspective:1000px;perspective:1000px}.carousel-inner>.carousel-item.active{left:0;-webkit-transform:translateZ(0);transform:translateZ(0)}}.carousel-inner>.active{display:block;left:0}.carousel-control{color:#fff;text-align:center;text-shadow:0 1px 2px rgba(0,0,0,.6);position:absolute;top:0;bottom:0;left:0;width:15%;font-size:20px;opacity:.5}.carousel-control.left{background-image:-webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001)));background-image:-webkit-linear-gradient(left,rgba(0,0,0,.5),rgba(0,0,0,.0001));background-image:linear-gradient(90deg,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001));background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1)}.carousel-control.right{right:0;left:auto;background-image:-webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.5)));background-image:-webkit-linear-gradient(left,rgba(0,0,0,.0001),rgba(0,0,0,.5));background-image:linear-gradient(90deg,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5));background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1)}.carousel-control .icon-next,.carousel-control .icon-prev{position:absolute;top:50%;z-index:5;display:inline-block;width:20px;height:20px;margin-top:-10px;font-family:serif;line-height:1}.carousel-control .icon-prev{left:50%;margin-left:-10px}.carousel-control .icon-next{right:50%;margin-right:-10px}.carousel-control .icon-prev:before{content:"\2039"}.carousel-control .icon-next:before{content:"\203a"}.carousel-indicators{position:absolute;bottom:10px;left:50%;z-index:15;width:60%;padding-left:0;margin-left:-30%;text-align:center;list-style:none}.btn,.nav .nav-item,.navbar .navbar-brand{position:relative}.carousel-indicators li{display:inline-block;width:10px;height:10px;margin:1px;text-indent:-999px;background-color:transparent;border:1px solid #fff;border-radius:10px}.carousel-indicators .active{width:12px;height:12px;margin:0;background-color:#fff}.bg-warning{color:#fff!important;background-color:#ff5722!important}.btn,.btn.btn-warning{background-color:inherit}.clearfix:after{content:"";display:table;clear:both}.d-inline-block{display:inline-block!important}.pull-xs-right{float:right!important;margin-left:auto}@media (max-width:543px){.hidden-xs-down{display:none!important}}.btn{margin-bottom:.3125rem;font-size:.875rem;letter-spacing:0;border:0 #ccc;outline:0;will-change:box-shadow,transform;color:rgba(0,0,0,.87)}.btn.btn-warning{color:#ff5722;border-color:#ccc}.btn.btn-raised.btn-warning{color:#fff;background-color:#ff5722;border-color:#ff5722}.btn.btn-lg{padding:.75rem 1.5rem;font-size:1.25rem;border-radius:.3rem}.navbar{border:0;z-index:1;border-radius:0;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-flow:row nowrap;flex-flow:row;-ms-flex-negative:0;flex-shrink:0;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-item-align:stretch;align-self:stretch}.navbar-nav .nav-link{padding:.5321rem;font-size:.875rem;font-weight:400}.navbar>*{-ms-flex-negative:0;flex-shrink:0}.navbar>.container{-webkit-box-flex:1;-ms-flex:1;flex:1}.dropdown-menu{display:block;padding:.25rem 0;border:0;opacity:0;-webkit-transform:scale(0);transform:scale(0);will-change:transform;right:0;left:auto;-webkit-transform-origin:100% 0;transform-origin:100% 0}.dropdown-menu .dropdown-item{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-flow:row wrap;flex-flow:row wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;min-width:7rem;max-width:17.5rem;min-height:3rem;padding:.8rem 1rem;overflow:hidden;line-height:1;text-overflow:ellipsis;word-wrap:break-word}.ripple-container{position:absolute;top:0;left:0;z-index:1;width:100%;height:100%;overflow:hidden;border-radius:inherit}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}._header .caption{-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);width:100%;text-align:center;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}@font-face{font-family:roboto;font-style:normal;font-weight:400;src:url(/fonts/RobotoRegular/RobotoRegular.eot?#iefix) format("embedded-opentype"),url(/fonts/RobotoRegular/RobotoRegular.woff) format("woff"),url(/fonts/RobotoRegular/RobotoRegular.ttf) format("truetype")}@font-face{font-family:roboto;font-style:normal;font-weight:700;src:url(/fonts/RobotoBold/RobotoBold.eot?#iefix) format("embedded-opentype"),url(/fonts/RobotoBold/RobotoBold.woff) format("woff"),url(/fonts/RobotoBold/RobotoBold.ttf) format("truetype")}.page__section{margin-bottom:6.31309em}._header .carousel-item:nth-of-type(1){background:url(/images/57.jpg) 61% 0 no-repeat;background-size:cover;width:100%;height:75vh}._header .carousel-item:nth-of-type(2){background:url(/images/pexels-photo-107911.jpg) 0 100% no-repeat;background-size:cover;width:100%;height:75vh}._header .carousel-item:nth-of-type(3){background:url(/images/metalprints10.jpg) no-repeat;background-size:cover;width:100%;height:75vh}._header .caption .header,._header .caption .title{color:#fff;margin-bottom:1rem;background-color:rgba(255,75,31,.5);background-image:linear-gradient(to left,rgba(255,75,31,.5),rgba(255,144,104,.5));display:inline-block}._header .caption .header{font-size:3.15733em;line-height:2.10489em;padding:0 2.10489em;font-weight:700}._header .caption .title{font-weight:100;font-size:2.36859em;line-height:1.57906em;padding:0 1.57906em}._projects .v-all-project-container .transparent-img{float:left;width:25%;display:block;height:auto;overflow:hidden}._projects .v-all-project-container .transparent-img img{width:100%;display:block;height:auto}@media (max-width:320px){._projects .v-all-project-container .transparent-img{display:none}._header .caption .header{font-size:1.333em}._header .caption .title{font-size:1em}}@media (min-width:321px) and (max-width:768px){._projects .v-all-project-container .transparent-img{display:none}._header .caption .header,._header .caption .title{font-size:1.77689em}}@media (min-width:768px) and (max-width:1023px){._header .caption .header{font-size:2.36859em}._header .caption .title{font-size:1.77689em}}
+	</style>
+	<link rel="preload" href="css/vendor.min.css" as="style" onload="this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/vendor.min.css"></noscript>
+	<link rel="preload" href="css/main.min.css" as="style" onload="this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/main.min.css"></noscript>
+	<script>!function(e){"use strict";var t=function(t,n,r){function o(e){return i.body?e():void setTimeout(function(){o(e)})}function a(){d.addEventListener&&d.removeEventListener("load",a),d.media=r||"all"}var l,i=e.document,d=i.createElement("link");if(n)l=n;else{var s=(i.body||i.getElementsByTagName("head")[0]).childNodes;l=s[s.length-1]}var u=i.styleSheets;d.rel="stylesheet",d.href=t,d.media="only x",o(function(){l.parentNode.insertBefore(d,n?l:l.nextSibling)});var f=function(e){for(var t=d.href,n=u.length;n--;)if(u[n].href===t)return e();setTimeout(function(){f(e)})};return d.addEventListener&&d.addEventListener("load",a),d.onloadcssdefined=f,f(a),d};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this),function(e){if(e.loadCSS){var t=loadCSS.relpreload={};if(t.support=function(){try{return e.document.createElement("link").relList.supports("preload")}catch(e){return!1}},t.poly=function(){for(var t=e.document.getElementsByTagName("link"),n=0;n<t.length;n++){var r=t[n];"preload"===r.rel&&"style"===r.getAttribute("as")&&(e.loadCSS(r.href,r),r.rel=null)}},!t.support()){t.poly();var n=e.setInterval(t.poly,300);e.addEventListener&&e.addEventListener("load",function(){e.clearInterval(n)}),e.attachEvent&&e.attachEvent("onload",function(){e.clearInterval(n)})}}}(this);</script>
+
+</head>
+<body>
+<div class="page__wrapper">
+	<header class="navbar navbar-dark bg-warning navbar-static-top bd-navbar" role="banner">
+		<div class="container">
+		<nav>
+			<div class="clearfix">
+				<button class="navbar-toggler pull-xs-right hidden-sm-up collapsed" type="button" data-toggle="collapse" data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+				<a class="navbar-brand hidden-sm-up active" href="index.html">ФотоЦентер</a>
+				<li class="nav navbar-nav nav-item dropdown hidden-sm-up d-inline-block">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Услуги</a>
+					<div class="dropdown-menu">
+                        <a class="dropdown-item" href="print_photo.html">Печать фото</a>
+                        <a class="dropdown-item" href="print_mugs.html">Печать на кружках</a>
+                        <a class="dropdown-item" href="print_shirts.html">Печать на футболках</a>
+                        <a class="dropdown-item" href="plotter.html">Широкоформатная печать</a>
+                        <a class="dropdown-item" href="order_frame.html">Заказ рам</a>
+                        <a class="dropdown-item" href="multipanno.html">Мультипанно</a>
+                        <a class="dropdown-item" href="mirrors.html">Заказ зеркал</a>
+						<a class="dropdown-item" href="maps.html">Настенные карты</a>
+					</div>
+				</li>
+			</div>
+			<div class="navbar-toggleable-xs collapse" id="bd-main-nav" aria-expanded="false" style="height: 0px;">
+				<a class="navbar-brand hidden-xs-down active" href="index.html">ФотоЦентер</a>
+				<ul class="nav navbar-nav pull-sm-right">
+					<li class="nav-item">
+						<a class="nav-item nav-link" href="#_caption">О нас<div class="ripple-container"></div></a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Услуги</a>
+						<div class="dropdown-menu">
+	                        <a class="dropdown-item" href="print_photo.html">Печать фото</a>
+	                        <a class="dropdown-item" href="print_mugs.html">Печать на кружках</a>
+	                        <a class="dropdown-item" href="print_shirts.html">Печать на футболках</a>
+	                        <a class="dropdown-item" href="plotter.html">Широкоформатная печать</a>
+	                        <a class="dropdown-item" href="order_frame.html">Заказ рам</a>
+	                        <a class="dropdown-item" href="multipanno.html">Мультипанно</a>
+	                        <a class="dropdown-item" href="mirrors.html">Заказ зеркал</a>
+							<a class="dropdown-item" href="maps.html">Настенные карты</a>
+							<!-- <div class="dropdown-divider"></div> -->
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-item nav-link " href="#_address">Контакты</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		</div>
+	</header>
+	<section class="page__section _header">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		  <ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		  </ol>
+		  <div class="carousel-inner" role="listbox">
+			<div class="carousel-item active">
+				<div class="caption">
+					<div class="text-center">
+						<h2 class="header" data-animation="animated bounceInLeft" data-delay="500">Услуга номер №1</h2>
+					</div>
+					<div class="text-center">
+						<h3 class="title" data-animation="animated bounceInRight" data-delay="1000">Краткое описание услуги №1</h3>
+					</div>
+					<button class="btn btn-raised btn-warning btn-lg" data-animation="animated zoomInUp" data-delay="1500">Перейти</button>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="caption">
+					<div class="text-center">
+						<h2 class="header" data-animation="animated bounceInDown" data-delay="500">Услуга номер №2</h2>
+					</div>
+					<div class="text-center">
+						<h3 class="title" data-animation="animated bounceInUp" data-delay="1000">Краткое описание услуги №2</h3>
+					</div>
+					<button class="btn btn-raised btn-warning btn-lg" data-animation="animated zoomInRight" data-delay="1500">Перейти</button>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="caption">
+					<div class="text-center">
+						<h2 class="header" data-animation="animated bounceInUp" data-delay="500">Услуга номер №3</h2>
+					</div>
+					<div class="text-center">
+						<h3 class="title" data-animation="animated flipInX" data-delay="1500">Краткое описание услуги №3</h3>
+					</div>
+					<button class="btn btn-raised btn-warning btn-lg" data-animation="animated lightSpeedIn" data-delay="1700">Перейти</button>
+				</div>
+			</div>
+		  </div>
+		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<span class="icon-prev" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<span class="icon-next" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		  </a>
+		</div>
+	</section>
+	<section class="page__section _caption" id="_caption">
+		<div class="container">
+			<div class="row">
+				<div class="grid__item color-3 m-b-3">
+					<h1 class="link link--nukun">Фото<span>Ц</span>ентр</h1>
+				</div>
+			</div>
+			<div class="row text-xs-center">
+				<p class="text-xs-center lead">Мы с удовольствием выполним ваш заказ. И вам теперь совершенно необязательно к нам приходить! Ведь через сайт нашей мастерской вы не только сможете узнать цену на все услуги, но и посмотреть, как будет выглядеть ваша рамка или зеркало.</p>
+				<hr class="m-y-1 w-100">
+				<p class="text-xs-center lead">На нашем сайте работает уникальный сервис визуализации заказа на рамы и зеркала, с мгновенным расчетом цены. При оформлении заказа сразу возможно заказать доставку, и мы привезем ваш заказ вам домой.</p>
+				<hr class="m-y-1 w-100">
+				<p class="text-xs-center lead">Кроме того на нашем сайте работает сервис онлайн заказа печати фотографий. Вы можете прямо через наш сайт закачать фотографию, которую вы хотите распечатать, выбрав соответствующий размер фотографии в каталоге. У нас вы можете заказать печать фотографий и любых других изображений, картин, портретов, накат их на пенокартон, натяг на подрамник.</p>
+			</div>
+		</div>
+	</section>
+	<section class="page__section _projects">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="v-all-project-container clearfix gallery-parent scroll-to-block">
+					<div class="v-all-project m-x-auto grid__item color-2">
+						<h2 class="text-xs-center m-b-3 link link--surinami"><span data-letters-l="Наши" data-letters-r="услуги">Наши услуги</span></h2>
+					</div>
+					<a href="maps.html" class="w25">
+						<img src="images/10_img/$_57.jpg" alt="">
+						<h3 class="caption p-y-2">Настенные <span>карты</span></h3>
+						<button type="button" class="btn btn-raised btn-secondary">Подробнее</button>
+					</a>
+					<a href="print_photo.html" class="w25">
+						<img src="images/10_img/metalprints10.jpg" alt="">
+						<h3 class="caption p-y-2">Печать <span>фото</span></h3>
+						<button type="button" class="btn btn-raised btn-secondary">Подробнее</button>
+					</a>
+					<a href="print_book.html" class="w25">
+						<img src="images/10_img/photobooks.jpg" alt="">
+						<h3 class="caption p-y-2">Фото<span>книги</span></h3>
+						<button type="button" class="btn btn-raised btn-secondary">Подробнее</button>
+					</a>
+					<a href="plotter.html" class="w25">
+						<img src="images/10_img/img_7145.jpg" alt="">
+						<h3 class="caption p-y-2">Широкоформатная <span>печать</span></h3>
+						<button type="button" class="btn btn-raised btn-secondary">Подробнее</button>
+					</a>
+					<a href="print_mugs.html" class="w25">
+						<img src="images/10_img/Drinkware.jpg" alt="">
+						<h3 class="caption p-y-2">печать на <span>кружках</span></h3>
+						<button type="button" class="btn btn-raised btn-secondary">Подробнее</button>
+					</a>
+					<span class="transparent-img"><img src="images/10_img/transparent.png" alt=""></span>
+					<span class="transparent-img"><img src="images/10_img/transparent.png" alt=""></span>
+					<a href="print_shirts.html" class="w25">
+						<img src="images/10_img/FASHION-N-PRINTING_Web-Site-copy-3.jpg" alt="">
+						<h3 class="caption p-y-2">печать <span>на футболках</span></h3>
+						<button type="button" class="btn btn-raised btn-secondary">Подробнее</button>
+					</a>
+					<a href="order_frame.html" class="w25">
+						<img src="images/10_img/багет.jpg" alt="">
+						<h3 class="caption p-y-2">Заказ <span>рам</span></h3>
+						<button type="button" class="btn btn-raised btn-secondary">Подробнее</button>
+					</a>
+					<a href="mirrors.html" class="w25">
+						<img src="images/10_img/992cf9da6bef68c55a5e4b8a4630b8a9.jpg" alt="">
+						<h3 class="caption p-y-2">Заказ <span>зеркал</span></h3>
+						<button type="button" class="btn btn-raised btn-secondary">Подробнее</button>
+					</a>
+					<a href="multipanno.html" class="w25">
+						<img src="images/10_img/02.jpg" alt="">
+						<h3 class="caption p-y-2"><span>Мультипанно</span></h3>
+						<button type="button" class="btn btn-raised btn-secondary">Подробнее</button>
+					</a>
+					<a href="maps.html" class="w25">
+						<img src="images/10_img/Mir_polit_233_158.jpg" alt="">
+						<h3 class="caption p-y-2">Настенные <span>карты</span></h3>
+						<button type="button" class="btn btn-raised btn-secondary">Подробнее</button>
+					</a>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="page__section _address" id="_address">
+		<div class="container">
+			<div class="row">
+				<div class="grid__item color-4 m-x-auto m-b-3">
+					<h2 class="link link--kumya"><span data-letters="Как найти нас">Как найти нас</span></h2>
+				</div>
+			</div>
+			<div class="row m-y-3">
+				<a class="btn btn-social-icon btn-odnoklassniki m-x-auto">
+					<span class="fa fa-odnoklassniki"></span>
+				</a>
+				<a class="btn btn-social-icon btn-vk m-x-auto">
+					<span class="fa fa-vk"></span>
+				</a>
+				<a class="btn btn-social-icon btn-instagram m-x-auto">
+					<span class="fa fa-instagram"></span>
+				</a>
+			</div>
+			<div class="row">
+				<div class="col-md-4 address">
+					<h5 class="m-t-2">Адреса</h5>
+					<p class="m-b-1"> г. Лабинск, ул. Б. Хмельницкого, дом 78</p>
+					<p> г. Лабинск, ул. Б. Хмельницкого, дом 78</p>
+					<h5 class="m-t-3">Телефон</h5>
+					<a class="phone" href="tel:+78616933555">+7(86169)3-35-55</a>
+					<h5 class="m-t-3">Email</h5>
+					<p><a class="mail-us" href="mailto:villem1@ya.ru">villem1@ya.ru</a></p>
+				</div>
+				<div class="col-md-8 form">
+					<form>
+						<div class="row" style="margin-left: 0; margin-right: 0;">
+							<div class="form-group col-sm-6" style="padding-left: 0;">
+								<label for="name">Имя</label>
+								<input type="text" name="name" class="form-control form-control-lg" id="name" placeholder="Ввведиет имя">
+							</div>
+							<div class="form-group col-sm-6" style="padding-left: 0;">
+								<label for="email">Email</label>
+								<input type="email" name="email" class="form-control form-control-lg" id="email" placeholder="Ввведиет email">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="tel">Телефон</label>
+							<input type="text" name="tel" class="form-control form-control-lg" id="tel" placeholder="Ввведиет номер телефона">
+						</div>
+						<div class="form-group">
+							<label for="exampleTextarea">Ваше сообщение</label>
+							<textarea class="form-control form-control-lg" id="exampleTextarea" rows="3"></textarea>
+						</div>
+						<div class="text-xs-right">
+							<button type="submit" class="btn btn-raised btn-warning btn-lg">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid m-t-3">
+			<div class="row">
+				<div id="map_canvas" class="mapping"></div>
+			</div>
+		</div>
+	</section>
+	<section class="page__section"></section>
+</div>
+
+
+
+	<script src="scripts/vendor.min.js"></script>
+	<script src="scripts/main.min.js"></script>
+</body>
+</html>

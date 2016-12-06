@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Печать фото</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/jquery-filer.css">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+<div class="page__wrapper">
+    <header class="navbar navbar-dark bg-warning navbar-static-top bd-navbar" role="banner">
+        <div class="container">
+            <nav>
+                <div class="clearfix">
+                    <button class="navbar-toggler pull-xs-right hidden-sm-up collapsed" type="button" data-toggle="collapse" data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+                    <a class="navbar-brand hidden-sm-up" href="index.html">ФотоЦентер</a>
+                    <li class="nav navbar-nav nav-item dropdown hidden-sm-up d-inline-block">
+                        <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Услуги</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item active" href="print_photo.html">Печать фото</a>
+                            <a class="dropdown-item" href="print_mugs.html">Печать на кружках</a>
+                            <a class="dropdown-item" href="print_shirts.html">Печать на футболках</a>
+                            <a class="dropdown-item" href="plotter.html">Широкоформатная печать</a>
+                            <a class="dropdown-item" href="order_frame.html">Заказ рам</a>
+                            <a class="dropdown-item" href="multipanno.html">Мультипанно</a>
+                            <a class="dropdown-item" href="mirrors.html">Заказ зеркал</a>
+							<a class="dropdown-item" href="maps.html">Настенные карты</a>
+                        </div>
+                    </li>
+                </div>
+                <div class="navbar-toggleable-xs collapse" id="bd-main-nav" aria-expanded="false" style="height: 0px;">
+                    <a class="navbar-brand hidden-xs-down" href="index.html">ФотоЦентер</a>
+                    <ul class="nav navbar-nav pull-sm-right">
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="index.html#_caption">О нас<div class="ripple-container"></div></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Услуги</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item active" href="print_photo.html">Печать фото</a>
+                                <a class="dropdown-item" href="print_mugs.html">Печать на кружках</a>
+                                <a class="dropdown-item" href="print_shirts.html">Печать на футболках</a>
+                                <a class="dropdown-item" href="plotter.html">Широкоформатная печать</a>
+                                <a class="dropdown-item" href="order_frame.html">Заказ рам</a>
+                                <a class="dropdown-item" href="multipanno.html">Мультипанно</a>
+                                <a class="dropdown-item" href="mirrors.html">Заказ зеркал</a>
+								<a class="dropdown-item" href="maps.html">Настенные карты</a>
+                                <!-- <div class="dropdown-divider"></div> -->
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link " href="#_address">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="page__section _header-logo _header-logo-print_photo">
+        <div class="block m-x-auto">
+            <h1 class="block__header text-xs-center">ФотоЦентер <span class="dash">-</span> Лабинск</h1>
+            <h2 class="block__subheader text-xs-center">Печать фото</h2>
+        </div>
+    </section>
+    <div class="container page__section">
+        <div class="row m-b-3">
+            <div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">Доставка:</h4>
+                <p>Сроки изготовления: 3-5 рабочих дней с момента предоплаты и утверждения заказа. Доставка осуществляется курьером лично в руки или самовывоз. Доставка 200 рублей.</p>
+                <h4 class="alert-heading">Способы оплаты:</h4>
+                <p class="mb-0">Оплата безналичным переводом (карта Сбербанка); Оплата наличными; Оплата наложенным платежом (на почте, при получении);</p>
+            </div>
+        </div>
+        <div class="row">
+            <form class="col-lg-12" action="php/form_upload.php" method="post" enctype="multipart/form-data" id="form-print_photo" accept-charset="UTF-8">
+                <div class="row  row_negative select-type_printing">
+                    <div class="form-group col-lg-4 col-sm-4">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="type_printing" id="print_photo" value="print_photo" checked>Печать фото
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-4 col-sm-4">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="type_printing" id="print_shirts" value="print_shirts">Печать на футболках
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-4 col-sm-4">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="type_printing" id="print_mugs" value="print_mugs"> Печать на кружках
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row  row_negative m-y-3">
+                    <div class="form-group col-lg-4">
+                        <label for="name">Ваше имя:</label>
+                        <input class="form-control form-control-lg" id="name" name="name" type="text" required placeholder="Александр">
+                        <p class="error">Lorem ipsum dolor.</p>
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label for="tel">Ваш телефон:</label>
+                        <input class="form-control form-control-lg" id="tel" name="tel" type="text" required placeholder="+79883335577" />
+                        <p class="error">Lorem ipsum dolor.</p>
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label for="email">Email:</label>
+                        <input class="form-control form-control-lg" id="email" name="email" type="text" required placeholder="example@mail.ru">
+                        <p class="error">Lorem ipsum dolor.</p>
+                    </div>
+                </div>
+                <div class="row  row_negative m-y-3 print_shirts">
+                    <div class="form-group col-lg-3 col-md-6">
+                        <label for="select-size-print_shirts">Размер печати:</label>
+                        <select class="select form-control form-control-lg" id="select-size-print_shirts" name="select-size-print_shirts">
+                            <option value="21x30">21x30 см</option>
+                            <option value="30x40">30x40 см</option>
+                            <option value="40x60">40x60 см</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-lg-3 col-md-6">
+                        <label for="select-area-print_shirts">Область печати:</label>
+                        <select class="select form-control form-control-lg" id="select-area-print_shirts" name="select-area-print_shirts">
+                            <option value="Только спереди">Только спереди</option>
+                            <option value="Только сзади">Только сзади</option>
+                            <option value="Спереди и сзади">Спереди и сзади</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-lg-3 col-md-6">
+                        <label for="size-print_shirts">Выберите размер:</label>
+                        <select class="select form-control form-control-lg" id="size-print_shirts" name="size-print_shirts">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="2XL">2XL</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-lg-3 col-md-6">
+                        <label for="select-number-print_shirts">Количество:</label>
+                        <input class="form-control form-control-lg" id="select-number-print_shirts" name="select-number-print_shirts" type="text">
+                    </div>
+                </div>
+                <div class="row  row_negative m-y-3 print_photo">
+                    <div class="form-group col-lg-4">
+                        <label for="select">Размер печати:</label>
+                        <select class="select form-control form-control-lg" id="select" name="select">
+                            <option value="10x15">10x15 см</option>
+                            <option value="15x20">15x20 см</option>
+                            <option value="20x30">20x30 см</option>
+                            <option value="25x38">25x38 см</option>
+                            <option value="30x45">30x45 см</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label for="select1">Тип бумаги:</label>
+                        <select class="select form-control form-control-lg" id="select1" name="select1">
+                            <option value="Глянцевый">Глянцевый</option>
+                            <option value="Матовый">Матовый</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label for="number">Количество:</label>
+                        <input class="form-control form-control-lg" id="number" name="number" type="text">
+                    </div>
+                </div>
+                <div class="row row_negative ">
+                    <fieldset class="form-group">
+                        <label style="font-size: 15px;">Где хотите забрать:</label>
+                        <div class="radio m-t-2">
+                            <label class="radio">
+                                <input id="red" name="radio" type="radio" checked value="ул. Красная"> ул. Красная</label>
+                        </div>
+                        <div class="radio">
+                            <label class="radio">
+                                <input id="Khalturina" name="radio" type="radio" value="ул. Халтурина"> ул. Халтурина</label>
+                        </div>
+                        <div class="radio">
+                            <label class="radio">
+                                <input id="home" name="radio" type="radio" value="ул. Халтурина">Доставка на дом</label>
+                        </div>
+                    </fieldset>
+                    <div class="form-group col-sm-4 col-md-4 ship_home">
+                        <div class="form-group">
+                            <label class="control-label " for="address">Адрес доставки:</label>
+                            <input class="form-control form-control-lg" id="address" name="address" type="text" placeholder="Красная 5" />
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label " for="time_ship">Вермя доставки:</label>
+                            <input class="form-control form-control-lg" id="time_ship" name="time_ship" type="text" placeholder="15.00" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row row_negative ">
+                    <div class="form-group col-lg-12">
+                        <label for="message">Сообщение:</label>
+                        <textarea class="form-control form-control-lg" cols="40" id="message" name="message" rows="5"></textarea>
+                    </div>
+                </div>
+                <input type="file" name="files[]" id="filer_input" multiple="multiple" data-jfiler-extensions="jpg, jpeg, png, gif" required>
+                <input class="btn btn-raised btn-warning btn-lg" type="submit" value="Отправить">
+            </form>
+        </div>
+    </div>
+    <section class="page__section _price">
+        <div class="container">
+            <h3 class="display-3 text-xs-center m-b-3">Таблица цен</h3>
+            <table class="table table-bordered table-hover">
+                <thead class="thead-default">
+                    <tr>
+                        <th rowspan="2" class="text-xs-center" style="vertical-align: middle;">Размер фотографии</th>
+                        <th colspan="3" class="text-xs-center">Количество</th>
+                    </tr>
+                    <tr>
+                        <th>1-49 шт</th>
+                        <th>50-299 шт</th>
+                        <th>300-999 шт</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10x15 см</td>
+                        <td>12 руб.</td>
+                        <td>10 руб.</td>
+                        <td>9 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>15x20 см</td>
+                        <td>24 руб.</td>
+                        <td>21 руб.</td>
+                        <td>18 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>20x30 см</td>
+                        <td>48 руб.</td>
+                        <td>43 руб.</td>
+                        <td>36 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>25x38 см</td>
+                        <td>120 руб.</td>
+                        <td>108 руб.</td>
+                        <td>90 руб.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Цены приведены за печать матовых фотографий. Наценка за печать на глянцевой бумаге - 50%.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="page__section _address" id="_address">
+        <div class="container">
+            <div class="row">
+                <div class="grid__item color-4 m-x-auto m-b-3">
+                    <h2 class="link link--kumya"><span data-letters="Как найти нас">Как найти нас</span></h2>
+                </div>
+            </div>
+            <div class="row m-y-3">
+                <a class="btn btn-social-icon btn-odnoklassniki m-x-auto">
+                    <span class="fa fa-odnoklassniki"></span>
+                </a>
+                <a class="btn btn-social-icon btn-vk m-x-auto">
+                    <span class="fa fa-vk"></span>
+                </a>
+                <a class="btn btn-social-icon btn-instagram m-x-auto">
+                    <span class="fa fa-instagram"></span>
+                </a>
+            </div>
+            <div class="row address text-xs-center">
+                <div class="col-lg-4">
+                    <h5 class="m-t-2">Адреса</h5>
+                    <p class="m-b-1"> г. Лабинск, ул. Б. Хмельницкого, дом 78</p>
+                    <p> г. Лабинск, ул. Б. Хмельницкого, дом 78</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="m-t-3">Телефон</h5>
+                    <a class="phone" href="tel:+78616933555">+7(86169)3-35-55</a>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="m-t-3">Email</h5>
+                    <p><a class="mail-us" href="mailto:villem1@ya.ru">villem1@ya.ru</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid m-t-3">
+            <div class="row">
+                <div id="map_canvas" class="mapping"></div>
+            </div>
+        </div>
+    </section>
+</div>
+
+	<script src="scripts/vendor.min.js"></script>
+	<script src="scripts/main.min.js"></script>
+</body>
+</html>
